@@ -2,11 +2,76 @@
 
 <html lang="en">
   <head>
-    
     <title>CatPhotoApp</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
+  <style>
+    h1, h2, p{
+      text-align: center;
+      font-size: 15px;
+    }
+    main{ 
+      background-color: rgb(51, 180, 148);
+      width: 80%;
+  /*     border: 2px solid red; */
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+      border-radius: 50px;
+    }
+    ul, ol{
+     /*  border: 2px solid green; */
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    li{
+     /*  border: 2px solid blue; */
+      text-align: left;
+    }
+    h1{
+    color: goldenrod;
+    font-size: 60px;
+    padding-top: 20px;
+    
+    }
+    h2{
+    color: antiquewhite;
+    /* border: 2px solid green; */
+    background-color: bisque;
+    color: brown;
+    border-radius: 60px;
+    padding: 20px 0;
+    }
+footer{
+  /* border: 2px solid green; */
+  color: rgb(5, 4, 4);
+  background-color: antiquewhite;
+  padding: 20px 0;
+}
+body{
+ /*  border: solid red; */
+  margin: 0px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZejJgr6SbrIYNQqtZ7bDWsOIfVOEQ0jFdXOs_N7ywSjbX9AL7ArGeBaMzVwHIt3_NUi8&usqp=CAU");
+}
+  div{
+ /*    border: 2px solid red; */
+    padding: 20px 0;
+  }
+  img{
+   /*  border: 2px solid red; */
+    border-radius: 60px;
+
+  }
+    
+
+    
+  </style>
   <body>
     <main>
+      <div></div>
       <h1>CatPhotoApp</h1>
       <section>
         <h2>Cat Photos</h2>
@@ -51,8 +116,10 @@
             <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
             <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
           </fieldset>
-          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
+          <div>
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </section>
     </main>
